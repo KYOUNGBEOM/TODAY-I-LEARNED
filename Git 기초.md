@@ -48,7 +48,7 @@
 ### 9. Branch를 합성하는 2가지 방법
 > git merge 이름(merge는 reset으로 되돌리기 가능, merge 하기 전 해당 브랜치의 마지막 시점)
 
-> git rebase 이름(
+> git rebase 이름(rebase후에 main 브랜치는 뒤쳐져 있는 상황, 다시 main 브랜치로 돌아와서 merge 해주어야 함)
 ### 10. Branch 간 충돌
 > merge 충돌시
 - 해결가능시 → 직접 해당 부분을 타이핑하여 수정 후 merge 진행
