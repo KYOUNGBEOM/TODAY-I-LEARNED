@@ -34,7 +34,7 @@
 
 > git revert --no-commit 돌아갈 커밋 해시 (원하는 다른 작업을 추가하고 함께 커밋)
 
-> git reset --hard (마지막 커밋의 상태로 되돌아가고 싶을때)
+> git reset --hard (뒤에 해시가 없으면 마지막 커밋을 의미)
 ### 8. Branch 생성/이동/삭제
 > git branch 이름(이름 브랜치 생성)
 
