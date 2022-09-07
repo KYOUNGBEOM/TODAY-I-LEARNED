@@ -32,6 +32,10 @@
 
 > git revert 돌아갈 커밋 해시 (돌아가고 나도 이전 내용 존재, 커밋하고 되돌아감) 
 
+> revert 충돌시 충돌해결 후 git revert --continue
+
+> revert 충돌해결 불가능시 git revert --abort
+
 > git revert --no-commit 돌아갈 커밋 해시 (커밋하지 않고 되돌아감)
 
 > git reset --hard (마지막으로 커밋된 지점으로 돌아감)
