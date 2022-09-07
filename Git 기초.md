@@ -12,12 +12,12 @@
 > git status
 ### 5. 특정파일/폴더 배제
 > 파일명을 .gitignore로 설정
-  - file.c(모든 file.c 제외)
-  - /file.c(최상위 폴더 file.c 제외)
-  - *.c(모든 .c 확장자 파일 제외)
-  - !not_ignore_this.c (.c 확장자이지만 무시하지 않을 파일) 
-  - logs(logs란 이름의 파일 또는 폴더와 그 내용들)
-  - logs/(logs란 이름의 폴더와 그 내용들) 
+    - file.c(모든 file.c 제외)
+    - /file.c(최상위 폴더 file.c 제외)
+    - *.c(모든 .c 확장자 파일 제외)
+    - !not_ignore_this.c (.c 확장자이지만 무시하지 않을 파일) 
+    - logs(logs란 이름의 파일 또는 폴더와 그 내용들)
+    - logs/(logs란 이름의 폴더와 그 내용들) 
 ### 6. 변경사항 버전에 담기
 > git add 이름 (이름 파일 담기)
 
