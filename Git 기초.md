@@ -30,11 +30,11 @@
 ### 7. 과거로 돌아가는 2가지 방법
 > git reset --hard 돌아갈 커밋 해시 (돌아가고 나면 이전 내용은 삭제)
 
-> git revert 돌아갈 커밋 해시 (돌아가고 나도 이전 내용 존재) 
+> git revert 돌아갈 커밋 해시 (돌아가고 나도 이전 내용 존재, 커밋하고 되돌아감) 
 
-> git revert --no-commit 돌아갈 커밋 해시 (원하는 다른 작업을 추가하고 함께 커밋)
+> git revert --no-commit 돌아갈 커밋 해시 (커밋하지 않고 되돌아감)
 
-> git reset --hard (뒤에 해시가 없으면 마지막 커밋을 의미)
+> git reset --hard (마지막으로 커밋된 지점으로 돌아감)
 ### 8. Branch 생성/이동/삭제
 > git branch 이름(이름 브랜치 생성)
 
@@ -52,8 +52,8 @@
 ### 10. Branch 간 충돌
 > merge 충돌시
 - 해결가능시 → 직접 해당 부분을 타이핑하여 수정 후 merge 진행
-- 해결불가능시(git merge --abort)
+- 해결불가능시 git merge --abort
 
 > rebase 충돌시
-- 해결가능시(git rebase --continue) → 충돌이 모두 해결될 때까지 반복
-- 해결불가능시(git rebase --abort)
+- 해결가능시 → 충돌부분 수정 → git rebase --continue  
+- 해결불가능시 git rebase --abort
