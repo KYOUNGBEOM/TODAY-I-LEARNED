@@ -6,4 +6,7 @@
 > git config --global user.email "이메일 주소"
 ### 2. 기본 브랜치명 변경
 > git config --global init.defaultBranch 브랜치명
-> 
+### 3. 저장소 생성
+> git init
+### 4. 저장소 작업내용 확인
+> git status
