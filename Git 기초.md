@@ -6,3 +6,4 @@
 > git config --global user.email "이메일 주소"
 ### 2. 기본 브랜치명 변경
 > git config --global init.defaultBranch 브랜치명
+> 
