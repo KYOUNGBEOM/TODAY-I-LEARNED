@@ -45,7 +45,7 @@
 
 > git branch -m 기존 브랜치명 새 브랜치명(브랜치 이름 변경)
 ### 9. Branch를 합성하는 2가지 방법
-> git merge 이름(merge는 reset으로 되돌리기 가능, merge 하기 전 해당 브랜치의 마지막 시점, 병합된 브랜치는 삭제)
+> git merge 이름(merge는 reset으로 되돌리기 가능, merge 하기 전 해당 브랜치의 마지막 시점)
 
 > git rebase 이름(
 ### 10. Branch 간 충돌
