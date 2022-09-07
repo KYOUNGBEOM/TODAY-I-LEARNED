@@ -50,7 +50,7 @@
 > git rebase 이름(
 ### 10. Branch 간 충돌
 > merge 충돌시
-- 해결가능시(직접 해당 부분을 타이핑하여 수정 후 merge 진행)
+- 해결가능시 → 직접 해당 부분을 타이핑하여 수정 후 merge 진행
 - 해결불가능시(git merge --abort)
 
 > rebase 충돌시
