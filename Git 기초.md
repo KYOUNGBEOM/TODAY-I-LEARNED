@@ -8,8 +8,9 @@
 > git config --global init.defaultBranch 브랜치명
 ### 3. 저장소 생성
 > git init
-### 4. 저장소 작업내용 확인
-> git status
+### 4. 저장소 작업내용 확인 / 변경 사항 확인
+> git status(작업내용확인)
+> git log(지금까지 커밋을 통해 생성한 변경점 확인)
 ### 5. 특정파일/폴더 배제
 > 파일명을 .gitignore로 설정
 - file.c(모든 file.c 제외)
