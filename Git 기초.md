@@ -34,4 +34,25 @@
 > git revert --no-commit 돌아갈 커밋 해시 (원하는 다른 작업을 추가하고 함께 커밋)
 
 > git reset --hard (마지막 커밋의 상태로 되돌아가고 싶을때)
-### 8.  
+### 8. Branch 생성/이동/삭제
+> git branch 이름(이름 브랜치 생성)
+
+> git branch(브랜치 목록 확인)
+
+> git switch 이름(이름 브랜치로 이동)
+
+> git branch -d 이름(이름 브랜치 삭제 단, 지워질 브랜치에만 있는 내용의 커밋이 있을 경우 대문자 D 사용)
+
+> git branch -m 기존 브랜치명 새 브랜치명(브랜치 이름 변경)
+### 9. Branch를 합성하는 2가지 방법
+> git merge 이름(merge는 reset으로 되돌리기 가능, merge 하기 전 해당 브랜치의 마지막 시점, 병합된 브랜치는 삭제)
+
+> git rebase 이름(
+### 10. Branch 간 충돌
+> merge 충돌시
+- 해결가능시(직접 해당 부분을 타이핑하여 수정 후 merge 진행)
+- 해결불가능시(git merge --abort)
+
+> rebase 충돌시
+- 해결가능시(git rebase --continue) → 충돌이 모두 해결될 때까지 반복
+- 해결불가능시(git rebase --abort)
