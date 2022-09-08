@@ -19,3 +19,17 @@
 > 맥: Command + /
 ### 3. 종류와 중요도 관련 태그
 > &lt;b&gt; - 글자를 굵게([사용 일람](https://developer.mozilla.org/ko/docs/Web/HTML/Element/b#%EC%82%AC%EC%9A%A9_%EC%9D%BC%EB%9E%8C))
+
+> &lt;Strong&gt; - 중요한 내용임을 명시
+
+> &lt;i&gt; - 글자를 기울임([사용일람](https://developer.mozilla.org/ko/docs/Web/HTML/Element/i#%EC%82%AC%EC%9A%A9_%EC%9D%BC%EB%9E%8C))
+
+>&lt;em&gt; - 강조할 내용임을 명시
+
+>&lt;sup&gt; - 위 첨자(지수,서수)
+
+>&lt;sub&gt; - 아래 첨자(각주,변수,화학식)
+
+>&lt;u&gt; - 철자 오류 표시
+
+>&lt;s&gt; - 더 이상 유효하지 않은 정보 표시
