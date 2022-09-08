@@ -61,3 +61,21 @@
 > rebase 충돌시
 - 해결가능시 → 충돌부분 수정 → git rebase --continue  
 - 해결불가능시 git rebase --abort
+### 11. 원격 저장소 사용하기
+> git remote add 원격저장소이름 원격저장소주소(로컬의 Git 저장소에 원격 저장소로의 연결)
+
+> git push -u 원격저장소이름 원격브랜치이름(로컬 저장소의 커밋 내역들을 원격으로 업로드)
+
+> git remote(원격목록보기)
+
+> git remote remove 원격저장소이름(로컬 프로젝트와의 연결을 없앰)
+
+> git clone 원격저장소주소(대상 폴더에서 git bash 실행 후 명령어 입력)
+### 12. Push와 Pull
+> git push(git push -u 원격저장소이름 원격브랜치이름 으로 대상 원격 브랜치 지정 후 가능)
+
+> git pull(원격의 커밋을 로컬로 가져옴)
+
+> Push 할 것이 있을 시 Pull 하는 두 가지 방법
+- git pull --no-rebase(merge 방식, 로컬과 원격의 어긋한 내용을 하나로 합침 )
+- git pull --rebase(원격의 내용을 먼저 붙이고, 이후에 로컬의 내용을 붙임)
