@@ -67,3 +67,19 @@
 >&lt;height&gt; - 높이
 
 >[이미지 맵 생성 사이트](https://www.image-map.net/) - 특수한 경우 제외 사용 지양 
+### 8. 표 사용하기
+>&lt;table&gt; - 테이블
+
+>&lt;caption&gt; - 표 설명 또는 제목
+
+>&lt;tr&gt; - 테이블의 행
+
+>&lt;td&gt; - 테이블의 데이터 셀
+
+>&lt;thead&gt; - 테이블의 헤더 부분(tbody 앞에 위치)
+
+>&lt;tbody&gt; - 테이블의 본문
+
+>&lt;tfoot&gt; - 테이블의 풋 부분(tbody 뒤에 위치)
+
+>&lt;th&gt; - 열 또는 행의 헤더(scope 속성으로 row, col 중 선택)
