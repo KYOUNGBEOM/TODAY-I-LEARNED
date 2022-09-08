@@ -52,7 +52,7 @@
 ### 9. Branch를 합성하는 2가지 방법
 > git merge 이름(merge는 reset으로 되돌리기 가능, merge 하기 전 해당 브랜치의 마지막 시점)
 
-> git rebase 이름(rebase후에 main 브랜치는 뒤쳐져 있는 상황, 다시 main 브랜치로 돌아와서 merge 해주어야 함)
+> git rebase 이름(main 브랜치는 뒤쳐져 있는 상황, 다시 main 브랜치로 돌아와서 merge 해주어야 함)
 ### 10. Branch 간 충돌
 > merge 충돌시
 - 해결가능시 → 직접 해당 부분을 타이핑하여 수정 후 merge 진행
@@ -79,3 +79,15 @@
 > Push 할 것이 있을 시 Pull 하는 두 가지 방법
 - git pull --no-rebase(merge 방식, 로컬과 원격의 어긋한 내용을 하나로 합침 )
 - git pull --rebase(원격의 내용을 먼저 붙이고, 이후에 로컬의 내용을 붙임)
+
+> git push --force(로컬의 내역 강제 Push, 협업간 반드시 상의 후 사용)
+### 13. 로컬에서 브랜치 만들어 원격에 Push
+> git push -u 원격저장소이름 로컬에서만든브랜치이름
+
+> git branch --all(로컬과 원격 브랜치 모두 확인)
+### 14. 원격 브랜치를 로컬로 Pull
+> git fetch (원격의 변경사항 확인)
+
+> git switch -t 원격저상소이름/원격브랜치이름(로컬에서 같은 이름 브랜치 생성 후 연결하고 스위치)
+### 15. 원격 브랜치 삭제
+> git push 원격저장소이름 --delete 원격브랜치이름
