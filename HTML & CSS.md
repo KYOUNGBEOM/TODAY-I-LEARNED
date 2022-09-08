@@ -16,4 +16,4 @@
 >
 > 윈도위: Crtl + /
 >
-> 맥: Comman + /
+> 맥: Command + /
