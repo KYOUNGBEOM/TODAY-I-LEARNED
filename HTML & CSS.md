@@ -17,3 +17,5 @@
 > 윈도위: Crtl + /
 >
 > 맥: Command + /
+### 3. 종류와 중요도 관련 태그
+> &lt;b&gt; - 글자를 굵게([사용 일람](https://developer.mozilla.org/ko/docs/Web/HTML/Element/b#%EC%82%AC%EC%9A%A9_%EC%9D%BC%EB%9E%8C))
