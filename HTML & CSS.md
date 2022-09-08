@@ -33,3 +33,25 @@
 >&lt;u&gt; - 철자 오류 표시
 
 >&lt;s&gt; - 더 이상 유효하지 않은 정보 표시
+### 4. 인용문 관련 태그
+>&lt;blockqoute&gt; - 비교적 긴 인용문에 사용(cite 속성으로 출처 표시)
+
+>&lt;cite&gt; - 저작물의 출처 표기(제목을 반드시 포함)
+
+>&lt;q&gt; - 비교적 짧은 인용문에 사용(Cite 속성으로 출처 표시)
+
+>&lt;mark&gt; - 인용문 중 강조할 부분, 사용자 행동과 관련된 부분 표시
+
+>&lt;abbr&gt; - 머릿글자 표시
+### 5. 목록 표시 관련 태그
+>&lt;ul&gt; - 순서가 없는 목록
+
+>&lt;ol&gt; - 순서가 있는 목록(Type, Start 사용 가능)
+
+>&lt;li&gt; - 목록 아이텀(ul, ol 태그에 포함시켜 사용)
+### 6. 용어와 정의 관련 태그
+>&lt;dl&gt; - 설명,서술목록(정의 목록을 만듦, description list)
+
+>&lt;dt&gt; - 용어의 제목(description term)
+
+>&lt;dde&gt; - 용어 설명(description details)
