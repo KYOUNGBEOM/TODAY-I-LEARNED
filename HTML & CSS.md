@@ -82,4 +82,4 @@
 
 >&lt;tfoot&gt; - 테이블의 풋 부분(tbody 뒤에 위치)
 
->&lt;th&gt; - 열 또는 행의 헤더(scope 속성으로 row-세로, col-가로 중 선택)
+>&lt;th&gt; - 열 또는 행의 헤더(scope 속성으로 row(세로,행), col(가로,) 중 선택)
