@@ -104,19 +104,27 @@
 
 >&lt;input&gt; - 입력을 받는 요소(type속성을 활용 - password, search, tel, number, range, date 등등)
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;● placeholder="" - 빈 칸에 보이는 안내문(지워짐)
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;● placeholder="" - 빈 칸에 보이는 안내문(지워짐, text 관련)
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;● maxlength="" - 최대 길이 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;● maxlength="" - 최대 길이(text 관련) 
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;● minlength="" - 최소 길이(최소길이 불만족시 submmit 거부)
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;● minlength="" - 최소 길이(최소길이 불만족시 submmit 거부, text 관련)
 
-<filedstet>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;○ max="" - 최대값
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;○ max="" - 최대값(숫자 관련)
   
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;○ min="" - 최소값
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;○ min="" - 최소값(숫자 관련)
   
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;○ step="" - 간격
-</fieldset>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;○ step="" - 간격(숫자 관련)
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;◎ checked="" - 체크박스 & 라디오(체크됨 여부, 체크 관련)
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;◎ naem="" - 라디오(다른 타입도 사용, 옵션들의 그룹, 체크 관련)
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;◎ value="" - 라디오(다른 타입도 사용, 각 옵션들의 실제 값, 체크 관련)
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;▲ accept="" - 받아들일 수 있는 파일 형식
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;▲ multiple="" - 여러 파일 업로드 가능
 
 >&lt;label&gt; - 인풋 요소마다 레벨(for 속성 값을 인풋 id 속성과 연결, 인풋 클릭 영역 확장)
 
@@ -124,5 +132,5 @@
 
 >&lt;fieldset&gt; - 폼 태그 내 항목들 그룹화(disabled 속성 사용시 포함된 입력요소 비활성화)
 
-&lt;legend&gt; - 필드셋 요쇼 제목 또는 설명
+>&lt;legend&gt; - 필드셋 요쇼 제목 또는 설명
 ### 10. 사용자로부터의 입력 - 2
