@@ -89,7 +89,10 @@
 >&lt;rowspan&gt; - 행 병합
 ### 9. 다른 곳으로 링크
 >&lt;a href="연결할 주소" target="링크를 열 곳 옵션"&gt;
-
 ● target속성값: _self(현재 창), _blank(새 창), _Parent(부모 프레임), _top(최상위 프레임)
 
->
+>&lt;a href="#id값"&gt;(id값 활용하여 사용, 이동하고자 하는 타겟으로 바로 이동)
+
+>&lt;address&gt; - 주소 및 연락처 정보 포함
+● &lt;a href="<mark>mailto:이메일주소"&gt; - 이메일 링크 태그
+● &lt;a href="tel:전화번호"&gt; - 전화번호 연결 태그 
