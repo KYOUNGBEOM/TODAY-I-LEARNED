@@ -92,6 +92,8 @@
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;● target속성값: _ self(현재 창), _ blank(새 창), _ Parent(부모 프레임), _ top(최상위 프레임)
 
+---
+
 >&lt;a href="#id값"&gt;(id값 활용하여 사용, 이동하고자 하는 타겟으로 바로 이동)
 
 >&lt;address&gt; - 주소 및 연락처 정보 포함
@@ -99,6 +101,9 @@
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;● &lt;a href="<strong>mailto</strong>:이메일주소"&gt; - 이메일 링크 태그
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;● &lt;a href="<strong>tel</strong>:전화번호"&gt; - 전화번호 연결 태그
+
+---
+
 ### 10. 사용자로부터의 입력 - 1
 >&lt;form&gt; - 정보 제출을 위한 태그 포함(autocomplete 속성:자동완성 여부 결정(기본은 on))
 
