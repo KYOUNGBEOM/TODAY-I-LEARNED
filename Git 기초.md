@@ -57,8 +57,7 @@
 > merge 충돌시
 > 
 - 해결가능시 → 직접 해당 부분을 타이핑하여 수정 후 merge 진행
-- 해결불가능시 git merge --abort
-- 
+- 해결불가능시 git merge --abort 
 > rebase 충돌시
 - 해결가능시 → 충돌부분 수정 → git rebase --continue  
 - 해결불가능시 git rebase --abort
