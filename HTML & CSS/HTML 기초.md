@@ -90,6 +90,6 @@
 ### 9. 다른 곳으로 링크
 >&lt;a href="연결할 주소" target="링크를 열 곳 옵션"&gt;
 
--target속성값: _self(현재 창), _blank(새 창), _Parent(부모 프레임), _top(최상위 프레임)
+● target속성값: _self(현재 창), _blank(새 창), _Parent(부모 프레임), _top(최상위 프레임)
 
 >
