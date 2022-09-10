@@ -109,9 +109,11 @@
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;● maxlength="" - 최대 길이 
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;● minlength="" - 최소 길이(최소길이 불만족시 submmit 거부)
-
----
-
+<filedstet>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;○ max="" - 최대값
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;○ min="" - 최소값
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;○ step="" - 간격
+</fieldset>
 >&lt;label&gt; - 인풋 요소마다 레벨(for 속성 값을 인풋 id 속성과 연결, 인풋 클릭 영역 확장)
 
 >&lt;button&gt; - 버튼(type속성에 submit, reset, button(기본 동작 없음)이 있음)
