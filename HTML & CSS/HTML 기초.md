@@ -99,10 +99,10 @@
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;● &lt;a href="<strong>mailto</strong>:이메일주소"&gt; - 이메일 링크 태그
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;● &lt;a href="<strong>tel</strong>:전화번호"&gt; - 전화번호 연결 태그
-### 10. 사용자로부터의 입력 - 1
+### 10. 입력 관련 태그
 >&lt;form&gt; - 정보 제출을 위한 태그 포함(autocomplete 속성:자동완성 여부 결정(기본은 on))
 
->&lt;input&gt; - 입력을 받는 요소(type속성- radion, checkout, list, password, search, tel, number, range, date 등등)
+>&lt;input&gt; - 입력을 받는 요소(type속성 - radio, checkout, list, password, search, tel, number, range, date 등)
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;● placeholder="" - 빈 칸에 보이는 안내문(지워짐, text 관련)
 
@@ -141,9 +141,25 @@
 >&lt;fieldset&gt; - 폼 태그 내 항목들 그룹화(disabled 속성 사용시 포함된 입력요소 비활성화)
 
 >&lt;legend&gt; - 필드셋 요쇼 제목 또는 설명
-### 10. 사용자로부터의 입력 - 2
+### 10. 옵션 관련 태그
 > &lt;textarea<strong>cols="" rows=""</strong>&gt; - cols(글자수 단위 너비), rows(표시되는 줄 수)
 
 >&lt;select&gt; - 옵션 태그 포함하여 사용(multiple 사용 가능 단, 드랍다운 대신 상자로 표시됨)
 
 >&lt;option&gt; - 선택지(selected, radio의 checked와 같은 기능 / value, 실제로 전송될 값) 
+### 11. 정도 표현 관련 태그
+>&lt;progress&gt; - 진행도 관련 태그(다운로드 진행상태 등)
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;● max(최대값, 기본:1)
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;● vaule(진행 수치, 자바스크립트로 변경)
+
+>&lt;meter&gt;
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;● min="", max=""(최소값과 최대값) 
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;● low="", high=""(전체 범위를 3등분)
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;● optimum=""(이상적인 값, 3개 구간 중 한 곳 위치)
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;● value=""(실제 값)
