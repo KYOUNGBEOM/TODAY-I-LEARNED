@@ -95,4 +95,5 @@
 
 >&lt;address&gt; - 주소 및 연락처 정보 포함
 ● &lt;a href="<strong>mailto</strong>:이메일주소"&gt; - 이메일 링크 태그
-● &lt;a href="tel:전화번호"&gt; - 전화번호 연결 태그 
+
+● &lt;a href="<strong>tel</strong>:전화번호"&gt; - 전화번호 연결 태그 
