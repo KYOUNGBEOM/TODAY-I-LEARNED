@@ -92,8 +92,6 @@
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;● target속성값: _ self(현재 창), _ blank(새 창), _ Parent(부모 프레임), _ top(최상위 프레임)
 
----
-
 >&lt;a href="#id값"&gt;(id값 활용하여 사용, 이동하고자 하는 타겟으로 바로 이동)
 
 >&lt;address&gt; - 주소 및 연락처 정보 포함
@@ -101,13 +99,10 @@
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;● &lt;a href="<strong>mailto</strong>:이메일주소"&gt; - 이메일 링크 태그
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;● &lt;a href="<strong>tel</strong>:전화번호"&gt; - 전화번호 연결 태그
-
----
-
 ### 10. 사용자로부터의 입력 - 1
 >&lt;form&gt; - 정보 제출을 위한 태그 포함(autocomplete 속성:자동완성 여부 결정(기본은 on))
 
->&lt;input&gt; - 입력을 받는 요소(type속성을 활용 - password, search, tel, number, range, date 등등)
+>&lt;input&gt; - 입력을 받는 요소(type속성- radion, checkout, list, password, search, tel, number, range, date 등등)
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;● placeholder="" - 빈 칸에 보이는 안내문(지워짐, text 관련)
 
@@ -147,6 +142,8 @@
 
 >&lt;legend&gt; - 필드셋 요쇼 제목 또는 설명
 ### 10. 사용자로부터의 입력 - 2
-> &lt;textarea <strong>cols="" rows=""</strong>&gt; - textarea 전용 속성(cols - 글자수 단위 너비, rows - 표시되는 줄 수)
+> &lt;textarea<strong>cols="" rows=""</strong>&gt; - cols(글자수 단위 너비), rows(표시되는 줄 수)
 
->
+>&lt;select&gt; - 옵션 태그 포함하여 사용(multiple 사용 가능 단, 드랍다운 대신 상자로 표시됨)
+
+>&lt;option&gt; - 선택지(selected, radio의 checked와 같은 기능 / value, 실제로 전송될 값) 
