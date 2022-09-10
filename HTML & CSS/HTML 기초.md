@@ -1,5 +1,6 @@
 ## HTML & CSS
 > [제대로 파는 HTML & CSS강좌](https://www.youtube.com/watch?v=TrC2x4N0XqY&t=5127s)를 듣고 학습한 내용 정리
+> 
 > [참고자료](https://developer.mozilla.org/ko/docs/Web/HTML)
 
 ### 1. 제목 태그와 문단 태그
