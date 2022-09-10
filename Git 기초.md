@@ -13,19 +13,12 @@
 > git log(지금까지 커밋을 통해 생성한 변경점 확인)
 ### 5. 특정파일/폴더 배제
 > 파일명을 .gitignore로 설정
-> 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- file.c(모든 file.c 제외)
-
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- /file.c(최상위 폴더 file.c 제외)
-
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- *.c(모든 .c 확장자 파일 제외)
-
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- !not_ignore_this.c (.c 확장자이지만 무시하지 않을 파일) 
-
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- logs(logs란 이름의 파일 또는 폴더와 그 내용들)
-
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- logs/(logs란 이름의 폴더와 그 내용들) 
-
+- file.c(모든 file.c 제외)
+- /file.c(최상위 폴더 file.c 제외)
+- *.c(모든 .c 확장자 파일 제외)
+- !not_ignore_this.c (.c 확장자이지만 무시하지 않을 파일) 
+- logs(logs란 이름의 파일 또는 폴더와 그 내용들)
+- logs/(logs란 이름의 폴더와 그 내용들) 
 ### 6. 변경사항 버전에 담기
 > git add 이름 (이름 파일 담기)
 
@@ -63,16 +56,12 @@
 ### 10. Branch 간 충돌
 > merge 충돌시
 > 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- 해결가능시 → 직접 해당 부분을 타이핑하여 수정 후 merge 진행
-
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- 해결불가능시 git merge --abort
-
+- 해결가능시 → 직접 해당 부분을 타이핑하여 수정 후 merge 진행
+- 해결불가능시 git merge --abort
+- 
 > rebase 충돌시
-> 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- 해결가능시 → 충돌부분 수정 → git rebase --continue  
-
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- 해결불가능시 git rebase --abort
-
+- 해결가능시 → 충돌부분 수정 → git rebase --continue  
+- 해결불가능시 git rebase --abort
 ### 11. 원격 저장소 사용하기
 > git remote add 원격저장소이름 원격저장소주소(로컬의 Git 저장소에 원격 저장소로의 연결)
 
