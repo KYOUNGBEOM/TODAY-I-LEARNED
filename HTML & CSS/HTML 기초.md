@@ -110,31 +110,31 @@
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;● minlength="" - 최소 길이(최소길이 불만족시 submmit 거부, text 관련)
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;○ max="" - 최대값(숫자 관련)
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;● max="" - 최대값(숫자 관련)
   
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;○ min="" - 최소값(숫자 관련)
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;● min="" - 최소값(숫자 관련)
   
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;○ step="" - 간격(숫자 관련)
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;● step="" - 간격(숫자 관련)
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;◎ checked="" - 체크박스 & 라디오(체크됨 여부, 체크 관련)
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;● checked="" - 체크박스 & 라디오(체크됨 여부, 체크 관련)
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;◎ naem="" - 라디오(다른 타입도 사용, 옵션들의 그룹, 체크 관련)
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;● name="" - 라디오(다른 타입도 사용, 옵션들의 그룹, 체크 관련)
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;◎ value="" - 라디오(다른 타입도 사용, 각 옵션들의 실제 값, 체크 관련)
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;● value="" - 라디오(다른 타입도 사용, 각 옵션들의 실제 값, 체크 관련)
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;▲ accept="" - 받아들일 수 있는 파일 형식(파일 관련)
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;● accept="" - 받아들일 수 있는 파일 형식(파일 관련)
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;▲ multiple="" - 여러 파일 업로드 가능(파일 관련)
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;● multiple="" - 여러 파일 업로드 가능(파일 관련)
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;△ value="" - 기본으로 설정된 값(수정가능, 공통(대부분))
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;● value="" - 기본으로 설정된 값(수정가능, 공통(대부분))
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;△ autofocus - 페이지 진입시 자동 포커스(공통(대부분))
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;● autofocus - 페이지 진입시 자동 포커스(공통(대부분))
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;△ required - 필수입력(미입력시 제출 불가능, 공통(대부분))
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;● required - 필수입력(미입력시 제출 불가능, 공통(대부분))
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;△ disabled - 입력 불가능, 전송안됨(공통(대부분))
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;● disabled - 입력 불가능, 전송안됨(공통(대부분))
 
->&lt;label&gt; - 인풋 요소마다 레벨(for 속성 값을 인풋 id 속성과 연결, 인풋 클릭 영역 확장)
+>&lt;label&gt; - 인풋 요소마다의 레벨(for 속성 값을 인풋 id 속성과 연결, 인풋 클릭 영역 확장)
 
 >&lt;button&gt; - 버튼(type속성에 submit, reset, button(기본 동작 없음)이 있음)
 
