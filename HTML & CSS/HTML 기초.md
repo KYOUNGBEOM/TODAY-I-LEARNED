@@ -98,4 +98,26 @@
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;● &lt;a href="<strong>mailto</strong>:이메일주소"&gt; - 이메일 링크 태그
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;● &lt;a href="<strong>tel</strong>:전화번호"&gt; - 전화번호 연결 태그 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;● &lt;a href="<strong>tel</strong>:전화번호"&gt; - 전화번호 연결 태그
+### 10. 사용자로부터의 입력 - 1
+>&lt;form&gt; - 정보 제출을 위한 태그 포함(autocomplete 속성:자동완성 여부 결정(기본은 on))
+
+>&lt;input&gt; - 입력을 받는 요소(type속성을 활용 - password, search, tel, number, range, date 등등)
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;● placeholder="" - 빈 칸에 보이는 안내문(지워짐)
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;● maxlength="" - 최대 길이 
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;● minlength="" - 최소 길이(최소길이 불만족시 submmit 거부)
+
+-----------------------------------------------------------------------------------------------------
+
+
+>&lt;label&gt; - 인풋 요소마다 레벨(for 속성 값을 인풋 id 속성과 연결, 인풋 클릭 영역 확장)
+
+>&lt;button&gt; - 버튼(type속성에 submit, reset, button(기본 동작 없음)이 있음)
+
+>&lt;fieldset&gt; - 폼 태그 내 항목들 그룹화(disabled 속성 사용시 포함된 입력요소 비활성화)
+
+&lt;legend&gt; - 필드셋 요쇼 제목 또는 설명
+### 10. 사용자로부터의 입력 - 2
