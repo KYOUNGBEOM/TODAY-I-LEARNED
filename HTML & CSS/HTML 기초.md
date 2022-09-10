@@ -90,7 +90,7 @@
 ### 9. 다른 곳으로 링크
 >&lt;a href="연결할 주소" target="링크를 열 곳 옵션"&gt;
 
-● target속성값: _ self(현재 창), _ blank(새 창), _ Parent(부모 프레임), _ top(최상위 프레임)
+&nbsp &nbsp● target속성값: _ self(현재 창), _ blank(새 창), _ Parent(부모 프레임), _ top(최상위 프레임)
 
 >&lt;a href="#id값"&gt;(id값 활용하여 사용, 이동하고자 하는 타겟으로 바로 이동)
 
