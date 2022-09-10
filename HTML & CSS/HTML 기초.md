@@ -1,5 +1,6 @@
 ## HTML & CSS
 > [제대로 파는 HTML & CSS강좌](https://www.youtube.com/watch?v=TrC2x4N0XqY&t=5127s)를 듣고 학습한 내용 정리
+> [참고자료](https://developer.mozilla.org/ko/docs/Web/HTML)
 
 ### 1. 제목 태그와 문단 태그
 > &lt;h1&gt; ~ &lt;h6&gt; - 제목(숫자가 높을 수록 낮은 단계)
@@ -126,11 +127,11 @@
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;● multiple="" - 여러 파일 업로드 가능(파일 관련)
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;● value="" - 기본으로 설정된 값(수정가능, 공통(대부분))
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;● value="" - 기본으로 설정된 값(수정가능, 공통)
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;● autofocus - 페이지 진입시 자동 포커스(공통(대부분))
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;● autofocus - 페이지 진입시 자동 포커스(공통)
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;● required - 필수입력(미입력시 제출 불가능, 공통(대부분))
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;● required - 필수입력(미입력시 제출 불가능, 공통)
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;● disabled - 입력 불가능, 전송안됨(공통(대부분))
 
@@ -147,7 +148,7 @@
 >&lt;select&gt; - 옵션 태그 포함하여 사용(multiple 사용 가능 단, 드랍다운 대신 상자로 표시됨)
 
 >&lt;option&gt; - 선택지(selected, radio의 checked와 같은 기능 / value, 실제로 전송될 값) 
-### 11. 정도 표현 관련 태그
+### 11. 정도 관련 태그
 >&lt;progress&gt; - 진행도 관련 태그(다운로드 진행상태 등)
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;● max(최대값, 기본:1)
