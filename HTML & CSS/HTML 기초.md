@@ -122,8 +122,6 @@
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;● name="" - 라디오(다른 타입도 사용, 옵션들의 그룹, 체크 관련)
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;● value="" - 라디오(다른 타입도 사용, 각 옵션들의 실제 값, 체크 관련)
-
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;● accept="" - 받아들일 수 있는 파일 형식(파일 관련)
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;● multiple="" - 여러 파일 업로드 가능(파일 관련)
