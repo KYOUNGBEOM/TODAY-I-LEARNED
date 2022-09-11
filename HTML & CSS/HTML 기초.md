@@ -58,15 +58,15 @@
 
 >&lt;dd&gt; - 용어 설명(description details)
 ### 7. 이미지 넣기
->&lt;src&gt; - 원본파일 경로(절대경로 또는 상대경로)
+>src - 원본파일 경로(절대경로 또는 상대경로)
 
->&lt;alt&gt; - 대체 텍스트(원본파일 무효시 보임)
+>alt - 대체 텍스트(원본파일 무효시 보임)
 
->&lt;title&gt; - 툴팁(alt의 대체제나 반복이 되어서는 안됨)
+>title - 툴팁(alt의 대체제나 반복이 되어서는 안됨)
 
->&lt;width&gt; - 너비
+>width - 너비
 
->&lt;height&gt; - 높이
+>height - 높이
 
 >[이미지 맵 생성 사이트](https://www.image-map.net/) - 특수한 경우 제외 사용 지양 
 ### 8. 표 사용하기
