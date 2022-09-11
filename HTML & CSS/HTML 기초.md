@@ -122,6 +122,8 @@
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;● name="" - 라디오(다른 타입도 사용, 옵션들의 그룹, 체크 관련)
 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;● value="" - 라디오(다른 타입도 사용, 각 옵션들의 실제 값, 체크 관련)
+
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;● accept="" - 받아들일 수 있는 파일 형식(파일 관련)
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;● multiple="" - 여러 파일 업로드 가능(파일 관련)
@@ -140,7 +142,7 @@
 
 >&lt;fieldset&gt; - 폼 태그 내 항목들 그룹화(disabled 속성 사용시 포함된 입력요소 비활성화)
 
->&lt;legend&gt; - 필드셋 요쇼 제목 또는 설명
+>&lt;legend&gt; - 필드셋 요소 제목 또는 설명
 ### 11. 옵션 관련 태그
 > &lt;textarea<strong>cols="" rows=""</strong>&gt; - cols(글자수 단위 너비), rows(표시되는 줄 수)
 
