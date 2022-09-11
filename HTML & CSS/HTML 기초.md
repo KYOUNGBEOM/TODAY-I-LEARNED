@@ -143,13 +143,13 @@
 >&lt;fieldset&gt; - 폼 태그 내 항목들 그룹화(disabled 속성 사용시 포함된 입력요소 비활성화)
 
 >&lt;legend&gt; - 필드셋 요쇼 제목 또는 설명
-### 10. 옵션 관련 태그
+### 11. 옵션 관련 태그
 > &lt;textarea<strong>cols="" rows=""</strong>&gt; - cols(글자수 단위 너비), rows(표시되는 줄 수)
 
 >&lt;select&gt; - 옵션 태그 포함하여 사용(multiple 사용 가능 단, 드랍다운 대신 상자로 표시됨)
 
 >&lt;option&gt; - 선택지(selected, radio의 checked와 같은 기능 / value, 실제로 전송될 값) 
-### 11. 정도 관련 태그
+### 12. 정도 관련 태그
 >&lt;progress&gt; - 진행도 관련 태그(다운로드 진행상태 등)
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;● max(최대값, 기본:1)
