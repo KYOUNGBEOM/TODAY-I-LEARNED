@@ -73,9 +73,9 @@ class보다 우선순위가 더 높고, id는 페이지상에서 요소마다 �
 
 
 ### 6. ul li:first-child
-### ul li:last-chid {
-### color: blue;
-### }
+   ### ul li:last-chid {
+   ### color: blue;
+   ### }
 -첫 번째와 마지막 요소 가상 클래스를 선택한다.
 
 
