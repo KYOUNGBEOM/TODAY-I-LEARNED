@@ -22,7 +22,7 @@
 
 ### 3. border
 
--border 속성은 요소에 테두리를 줄 수 있다.
+- border 속성은 요소에 테두리를 줄 수 있다.
 
 - 굵기, 스타일, 색 순으로 작성한다.(ex. border: 1px bold black;)
 
