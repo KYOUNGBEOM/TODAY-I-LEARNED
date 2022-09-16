@@ -8,4 +8,4 @@
 ## 1. [Git기초](https://github.com/KYOUNGBEOM/TODAY-I-LEARNED/blob/main/Git%20%EA%B8%B0%EC%B4%88.md)
 ## 2. [HTML & CSS](https://github.com/KYOUNGBEOM/TODAY-I-LEARNED/blob/main/HTML%20%26%20CSS)
 - [HTML 기초](https://github.com/KYOUNGBEOM/TODAY-I-LEARNED/blob/main/HTML%20&%20CSS/HTML%20%EA%B8%B0%EC%B4%88.md) 
-- [CSS 기초](
+- [CSS 기초](https://github.com/KYOUNGBEOM/TODAY-I-LEARNED/blob/main/HTML%20%26%20CSS/CSS%20%EA%B8%B0%EC%B4%88.md)
