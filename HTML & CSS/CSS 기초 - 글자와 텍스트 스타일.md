@@ -1,4 +1,4 @@
-###1. font-style과 font-weight
+### 1. font-style과 font-weight
 - font-style은 글자를 기울일 때 사용한다.
 추가적인 팁으로는 italic과 oblique는 둘 다 기울여 쓴 서체 같지만,
 italic이 기울여 쓴 서체라면 oblique는 본래 서체를 기울여놓은 것이다.
