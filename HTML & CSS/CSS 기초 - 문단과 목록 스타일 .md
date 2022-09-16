@@ -1,4 +1,5 @@
 <h2>정렬과 간격</h2>
+
 ### 1.text-align
 - text-align 속성은 텍스트의 정렬 방식을 지정한다.
 - 기본값인 left, right, center,justify가 있다.
