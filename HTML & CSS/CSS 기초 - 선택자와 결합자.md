@@ -45,31 +45,31 @@ class보다 우선순위가 더 높고, id는 페이지상에서 요소마다 �
 ### 1. .list li {
 ### color: black;
 ### }
-- 자손결합자로서 class="list'로 정의된 목록 태그 안의 모든 li를 선택한다.
+- 자손결합자로서 class="list"로 정의된 목록 태그 안의 모든 li를 선택한다.
 
 
 ### 2. .list > li {
 ### color: black;
 ### }
-- 자식결합자로서 class="list'로 정의된 목록 태그 안의 1촌 자손결합자 li를 선택한다.
+- 자식결합자로서 class="list"로 정의된 목록 태그 안의 1촌 자손결합자 li를 선택한다.
 
 
 ### 3. .list> li li {
 ### text-decoration: underline;
 ### }
-- 자식결합자로서 class="list'로 정의된 목록 태그 안의 모든 2촌 자손결합자 li를 선택한다.
+- 자식결합자로서 class="list"로 정의된 목록 태그 안의 모든 2촌 자손결합자 li를 선택한다.
 
 
 ### 4. .list ~ li {
 ### font-weight: bold;
 ### }
-- class="list'로 정의된 목록 태그 안의 뒤 따르는 모든 동생결합자들을 선택한다.
+- class="list"로 정의된 목록 태그 안의 뒤 따르는 모든 동생결합자들을 선택한다.
 
 
 ### 5. list + li {
 ### font-style: italic;
 ### }
-- class="list'로 정의된 목록 태그 안의 바로 다음 동생결합자를 선택한다.
+- class="list"로 정의된 목록 태그 안의 바로 다음 동생결합자를 선택한다.
 
 
 ### 6. ul li:first-child
