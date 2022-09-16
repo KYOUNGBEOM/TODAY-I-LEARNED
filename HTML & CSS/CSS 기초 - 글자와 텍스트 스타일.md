@@ -1,4 +1,4 @@
-### 1. font-style과 font-weight
+### 1. font-style와 font-weight
 - font-style은 글자를 기울일 때 사용한다.
 - italic이 기울여 쓴 서체라면 oblique는 본래 서체를 기울여놓은 것이다. 이 둘은 한쪽이 없을 시 상호 교차되어 사용된다.
 
@@ -19,7 +19,7 @@
  
 - pt는 자주 사용되지는 않지만 1인치/72로 프린트할 컨텐츠에 사용한다.
 
-### 3. text-deocoration과 text-transform
+### 3. text-deocoration와 text-transform
 - text-decoration은 글을 꾸며주는데 사용한다.[사용일람](https://developer.mozilla.org/en-US/docs/Web/CSS/text-decoration)
  
 - html, css와 같이 대문자로 작성된 텍스트는 capitalize에 영향을 받지않는다. 
