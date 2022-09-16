@@ -10,18 +10,19 @@ italic이 기울여 쓴 서체라면 oblique는 본래 서체를 기울여놓은
 
 ### 2. font-szie
 - font-size는 글자의 크기를 지정한다.
-크기를 지정하는 단위로는 px, %, em, rem가 있다.
-px는 절대값으로써 픽셀 단위이다.
-100% = 1em으로, 부모 요소와의 상대적인 크기로 나타난다. 요소의 중첩에 영향을 받는다.
-rem은 html 요소와의 상대적 크기를 가지므로, 요소의 중첩에 영향을 받지 않는다.
-pt는 자주 사용되지는 않지만 1인치/72로 프린트할 컨텐츠에 사용한다.
+- 크기를 지정하는 단위로는 px, %, em, rem가 있다.
+- px는 절대값으로써 픽셀 단위이다.
+- 100% = 1em으로, 부모 요소와의 상대적인 크기로 나타난다. 요소의 중첩에 영향을 받는다.
+- rem은 html 요소와의 상대적 크기를 가지므로, 요소의 중첩에 영향을 받지 않는다.
+- pt는 자주 사용되지는 않지만 1인치/72로 프린트할 컨텐츠에 사용한다.
 
 ### 3. text-deocoration과 text-transform
 - text-decoration은 글을 꾸며주는데 사용한다.[사용일람](https://developer.mozilla.org/en-US/docs/Web/CSS/text-decoration)
-- text-transform의 경우 html, css와 같이 대문자로 작성된 텍스트는 capitalize에 영향을 받지않는다. 
-종류로는 capitalize, lowercase, uppercase가 있다.
+- html, css와 같이 대문자로 작성된 텍스트는 capitalize에 영향을 받지않는다. 
+- 종류로는 capitalize, lowercase, uppercase가 있다.
 
 ### 4. text-shadow
 - text-shadow는 텍스트에 그림자를 줄 수 있다.
-x좌표, y좌표, 흐림, 색 형식으로 그림자를 넣을 수 있고, 쉼표로 구분하여 여러개를 넣을 수 있다.
+x좌표, y좌표, 흐림, 색 형식으로 그림자를 넣을 수 있다.
+쉼표로 구분하여 여러개를 넣을 수 있다.
 크롬 개발자 도구를 사용하면 손쉽게 값을 조정할 수 있다.(윈도우: Ctrl+shift +i)
