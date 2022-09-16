@@ -6,16 +6,19 @@
 - 모든 요소를 선택한다.
 만약 같은 선택자를 사용하는 경우에는 뒤에 오는 것이 우선순위가 더 높다.
 
+
 ### 2. p {
 ### color: black;
 ### }
 - 태그를 선택한다.
 
-### 3. .blue {
+
+### 3..blue {
 ### color: black;
 ### }
 - class선택자로서 class="blue"를 선택한다.
 태그보다 우선순위가 더 높고, 페이지 상에서 여러 요소가 같은 Class를 가질 수 있다.
+
 
 ### 4. p.blue {
 ### color: black;
@@ -24,11 +27,13 @@
 선택자는 구체적일수록 우선순위가 더 높다.
 예를 들어 .blue<p.blue<p.blue.dark 로 순으로 우선순위가 더 높다.
 
+
 ### 5. #blue {
 ### color: black;
 ### }
 - id 선택자이다.
 class보다 우선순위가 더 높고, id는 페이지상에서 요소마다 고유해야 한다.
+
 
 ### 6. p, .blue, #red{
 ### text-decoration: none;
@@ -42,31 +47,37 @@ class보다 우선순위가 더 높고, id는 페이지상에서 요소마다 �
 ### }
 - 자손결합자로서 class="list'로 정의된 목록 태그 안의 모든 li를 선택한다.
 
+
 ### 2. .list > li {
 ### color: black;
 ### }
 - 자식결합자로서 class="list'로 정의된 목록 태그 안의 1촌 자손결합자 li를 선택한다.
+
 
 ### 3. .list> li li {
 ### text-decoration: underline;
 ### }
 - 자식결합자로서 class="list'로 정의된 목록 태그 안의 모든 2촌 자손결합자 li를 선택한다.
 
+
 ### 4. .list ~ li {
 ### font-weight: bold;
 ### }
 - class="list'로 정의된 목록 태그 안의 뒤 따르는 모든 동생결합자들을 선택한다.
+
 
 ### 5. list + li {
 ### font-style: italic;
 ### }
 - class="list'로 정의된 목록 태그 안의 바로 다음 동생결합자를 선택한다.
 
+
 ### 6. ul li:first-child
 ### ul li:last-chid {
 ### color: blue;
 ### }
 -첫 번째와 마지막 요소 가상 클래스를 선택한다.
+
 
 ### 7. .list > li:not(:first-child) {
 ### text-decoraiton: underline;
@@ -78,11 +89,13 @@ class보다 우선순위가 더 높고, id는 페이지상에서 요소마다 �
 ### }
 - class="list"인 ul목록 태그를 제외한 나머지 ul태그 안의 li 태그를 선택한다.
 
+
 ### 8. ul li:nth-child(n) {
 ### color: blue;
 ### font-stlye: italic;
 ### }
 - ~ 번째 요소 가상 클래스로 #, n, n+#, odd, even 등 적용가능
+
 
 ### 9. li:hover {
 ### font-weight: bold;
