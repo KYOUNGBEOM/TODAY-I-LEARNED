@@ -12,3 +12,9 @@
 
 - align-content 속성은 플레스의 교차축 따라 배치방식을 결정함. 플렉스 항목을 한 덩이로 뭉쳐서 정렬함. 
 - align-content 속성에는 flex-start, flex-end, center, space-around, space-between, space-evenly등이 있음.
+
+- flex-basis는 주축의 길이를 설정함. flex-direction 값에 따라 너비 또는 높이를 조정함.
+- flex-grow는 빈 공간을 채울지 여부를 결정함. 기본값은 0이고, 채울 때 다른 아이템들의 값에 비례해서 공백을 나누어 가짐.
+- flex-shrink는 전체 공간이 부족할 때, 아이템의 길이가 컨텐츠의 너비 또는 flex-basis로 설정한 값보다 작아질 수 있도록 함.
+- flex-shrink의 기본값은 1이며, 증가할수록 길이가 더 줄어듬.
+- flex 컨테이너의 아이템들은 order 속성을 활용하여 순서를 변경할 수 있음. 기본값은 0이고, 값이 작아질 수록 앞에 배치됨.
