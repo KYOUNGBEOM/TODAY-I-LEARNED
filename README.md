@@ -1,4 +1,4 @@
-# [TODAY I LEARNED](https://github.com/KYOUNGBEOM/TODAY-I-LEARNED/tree/main/Today%20I%20learned)
+# [TODAY I LEARNED(TIL)](https://github.com/KYOUNGBEOM/TODAY-I-LEARNED/tree/main/Today%20I%20learned)
 ● 개발자가 되기 위한 성장일기
 
 ● 오늘 하루 내가 학습한 내용들을 꾸준히 기록
