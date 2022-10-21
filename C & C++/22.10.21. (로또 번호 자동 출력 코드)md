@@ -1,0 +1,37 @@
+#include <time.h>
+#include <stdio.h>
+#include <stdlib.h>
+
+// 로또 번호 랜덤 출력
+
+void lotto(); 
+
+int main(void) {
+
+	int repeat;
+
+	printf("몇 줄을 자동으로 하실건가요? ");
+	scanf_s("%d", &repeat);
+
+	printf("\n로또 번호 6개 자동\n\n");
+
+	srand(time(NULL));
+
+	for (int i = 1; i <= repeat; i++) {
+		lotto();
+	}
+
+	return 0;
+}
+
+void lotto() {
+
+	for (int i = 1; i < 7; i++) {
+		int num = rand() % 45 + 1; // 1 ~ 45
+		printf("%d번 ", num);
+	}
+	printf("\n");
+	return 0;
+}
+
+// 추후 번호 작은 순서부터 정렬되어 출력되도록 수정
