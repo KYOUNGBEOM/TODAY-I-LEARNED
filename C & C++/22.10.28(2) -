@@ -20,4 +20,4 @@ C++ 스트림 자체의 독립적인 버퍼를 사용하게 되어
 
             (동기화를 끊으면 Thread unsafe 상태가 되어 race condition이 발생할 수 있다.)
             
-[출처] [C++] cin.tie(NULL); ios::sync_with_stdio(false); 의 의미, 뜻|작성자 HOO
+[출처] [C++] cin.tie(NULL); ios::sync_with_stdio(false); 의 의미, 뜻|작성자 HOO (https://blog.naver.com/harang8069/222425811416)
