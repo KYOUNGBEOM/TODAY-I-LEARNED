@@ -8,16 +8,11 @@ C 표준 스트림의 버퍼와 C++의 버퍼를 모두 사용하기 때문에 �
 C++ 스트림 자체의 독립적인 버퍼를 사용하게 되어
 사용하는 버퍼의 수가 줄어들기 때문에 실행속도가 향상된다.
 
-*주의 : 버퍼가 분리되었을 때는
-
-            입력을 받을 때 C++의 cin과 C의 scanf, gets, getchar 등을 같이 사용하면 안된다.
-
-            출력시에도 마찬가지로 C++의 cout와 C의 printf, puts, putchar 등을 같이 사용하면 안된다.
-
-            > 입출력 함수를 섞어서 사용하는 경우 입출력 순서가 올바르지 못하게 나올 수 있고
-
-            > 멀티 쓰레드 환경에서는 예상치 못한 결과가 도출될 수 있기 때문이다.
-
-            (동기화를 끊으면 Thread unsafe 상태가 되어 race condition이 발생할 수 있다.)
+*주의 : 
+버퍼가 분리되었을 때는
+입력을 받을 때 C++의 cin과 C의 scanf, gets, getchar 등을 같이 사용하면 안된다.
+출력시에도 마찬가지로 C++의 cout와 C의 printf, puts, putchar 등을 같이 사용하면 안된다.
+입출력 함수를 섞어서 사용하는 경우 입출력 순서가 올바르지 못하게 나올 수 있고, 멀티 쓰레드 환경에서는 예상치 못한 결과가 도출될 수 있기 때문이다.
+(동기화를 끊으면 Thread unsafe 상태가 되어 race condition이 발생할 수 있다.)
             
 [출처] [C++] cin.tie(NULL); ios::sync_with_stdio(false); 의 의미, 뜻|작성자 HOO (https://blog.naver.com/harang8069/222425811416)
