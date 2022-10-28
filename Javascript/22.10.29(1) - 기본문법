@@ -123,5 +123,3 @@ JS는 정수와 실수를 구분하지 않음
     1. Object(대문자)타입 {key: value}
     2. name과 value를 프로퍼티라고 부름.
     3. Object는 프로퍼티 집합
-    
-    
