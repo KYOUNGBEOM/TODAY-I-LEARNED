@@ -1,0 +1,24 @@
+#include <iostream>
+#include <string>
+using namespace std;
+
+string dopa = "life is limited";
+
+
+// 문자열에 관한 함수 
+
+int main() {
+	cout << dopa << "\n";
+	cout << dopa.substr(0, 3) << "\n";
+	reverse(dopa.begin(), dopa.end());
+	cout << dopa << "\n";
+	dopa += " dopa!!";
+	cout << dopa << "\n";
+	if (dopa.find("dopa!!") != string::npos) {
+		cout << "dopa 안에 dopa!!있다" << "\n";
+	}
+
+	return 0;
+}
+
+ 
