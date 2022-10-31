@@ -4,6 +4,7 @@ using namespace std;
 
 
 // 내 풀이
+// 시간은 이상, 미만
 int A, B, C;
 int a[100];
 int arrive1, leave1;
