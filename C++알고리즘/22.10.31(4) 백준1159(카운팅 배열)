@@ -1,0 +1,65 @@
+#include <iostream>
+#include <string>
+
+using namespace std;
+
+// 내 풀이 
+int N, cnt[26];
+char arr[150][30];
+string name;
+
+int main() {
+	cin >> N;
+	for (int i = 0; i < N; i++) {
+		cin >> name;
+		int j;
+		for (j = 0; j < name.size(); j++) {
+			arr[i][j] = name[j];
+		}
+	}
+
+	for (int i = 0; i < N; i++) {
+		cnt[arr[i][0] - 'a']++;
+		}
+
+	int predaja = 1;
+	for (int i = 0; i < 26; i++) {
+		if (cnt[i] >= 5) {
+			cout << (char)('a' + i);
+			predaja = 0;
+		}
+	}
+	if (predaja) {
+		cout << "PREDAJA";
+	}
+
+	return 0;
+}
+
+// 강의 풀이
+#include <iostream>
+#include <string>
+
+using namespace std;
+
+int n, cnt[26];
+string s, ret;
+
+int main() {
+	cin >> n;
+	for (int i = 0; i < n; i++) {
+		cin >> s;
+		cnt[s[0] - 'a']++;
+	}
+
+	for (int i = 0; i < 26; i++) {
+		if (cnt[i] >= 5) {
+			ret += (char)(i + 'a');
+		}
+	}
+	if (ret.size()) cout << ret;
+	else cout << "PREDAJA";
+	
+	
+	return 0;
+}
