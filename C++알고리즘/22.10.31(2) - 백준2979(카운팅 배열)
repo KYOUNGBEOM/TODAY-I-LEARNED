@@ -2,9 +2,9 @@
 #include <algorithm>
 using namespace std;
 
+// 시간은 이상, 미만으로 생각
 
 // 내 풀이
-// 시간은 이상, 미만
 int A, B, C;
 int a[100];
 int arrive1, leave1;
@@ -53,6 +53,31 @@ int main() {
 	sum = sum + (result3 * A);
 	
 	cout << sum;
+
+	return 0;
+}
+
+#include <iostream>
+#include <algorithm>
+using namespace std;
+
+// 강사 풀이
+int A, B, C, a, b, cnt[104], ret;
+
+int main() {
+	cin >> A >> B >> C;
+	for (int i = 0; i < 3; i++) {
+		cin >> a >> b;
+		for (int j = a; j < b; j++)cnt[j]++;
+	}
+	for (int j = 1; j < 100; j++) {
+		if (cnt[j]) {
+			if (cnt[j] == 1) ret += A;
+			else if (cnt[j] == 2) ret += B * 2;
+			else if (cnt[j] == 3) ret += C * 3;
+		}
+	}
+	cout << ret;
 
 	return 0;
 }
