@@ -61,7 +61,7 @@ int main() {
 #include <algorithm>
 using namespace std;
 
-// 강사 풀이
+// 강 풀이
 int A, B, C, a, b, cnt[104], ret;
 
 int main() {
