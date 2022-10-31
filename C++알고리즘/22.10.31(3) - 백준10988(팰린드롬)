@@ -1,0 +1,23 @@
+// 팰린드롬(회문)
+
+#include <iostream>
+#include <string>
+#include <algorithm>
+
+using namespace std;
+
+string s;
+string r;
+
+int main() {
+	cin >> s;
+	r = s;
+	reverse(s.begin(), s.end());
+
+	if (r == s) {
+		cout << 1;
+	}
+	else if (r != s) {
+		cout << 0;
+	}
+}
