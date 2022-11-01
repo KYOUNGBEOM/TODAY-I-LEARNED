@@ -1,0 +1,31 @@
+// 내 코드
+#include <iostream>
+
+using namespace std;
+
+int N, K;
+long long tmp[100000];
+int sum;
+
+int main() {
+	cin >> N >> K;
+	for (int i = 0; i < N; i++) {
+		cin >> tmp[i];
+	}
+
+	int max = 0;
+	for (int i = 0; i < N - K + 1; i++) {
+		for (int j = 0; j < K; j++) {
+			sum += tmp[i + j];
+		}
+		if (sum > max) max = sum;
+		sum = 0;
+	}
+	
+	cout << max;
+
+	return 0;
+}
+
+-> 문제에서 제시한 입력값을 넣으면 올바른 출력값이 나오나 시간초과가 뜬다..
+   빅오표기법에 따른 시간복잡도 공부가 필요하다..
