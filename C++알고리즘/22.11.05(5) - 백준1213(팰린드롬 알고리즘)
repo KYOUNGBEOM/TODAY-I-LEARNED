@@ -1,0 +1,67 @@
+// 내 코드 -> 시간초과
+//#include <iostream>
+//#include <string>
+//#include <algorithm>
+//
+//using namespace std;
+//string N, R;
+//int e = 1;
+//
+//int main() {
+//	ios_base::sync_with_stdio(false);
+//	cin.tie(NULL); cout.tie(NULL);
+//	cin >> N;
+//	sort(N.begin(), N.end());
+//	do {
+//		R = N;
+//		reverse(R.begin(), R.end());
+//		if (R == N) {
+//			cout << N;
+//			e = 0;
+//			break;
+//		}
+//	} while(next_permutation(N.begin(), N.end()));
+//
+//	if(e) cout << "I'M Sorry Hansoo";
+//
+//	return 0;
+//}
+
+// 강의 코드
+// 불가능한 경우가 뭘까를 먼저 생각? 홀수가 2개이상이면 불가능하다.
+// Z부터 A까지 거꾸로 내려오는 것을 통해 오름차순으로 정리
+// 홀수가 2개 이상일 때는 어차피 불가능하기 때문에, 홀수가 하나인 경우 mid 변수에 홀수인 문자 하나를 저장시켜놓고 cnt값을 하나 줄임으로써 해당 문자의 갯수를 짝수로 만듦.
+// 이후 모든 문자를 짝수라고 생각하고 오름차순으로 정렬하고, 나중에 저장해두었던 홀수 문자 하나를 insert함수를 이용하여 중간에 삽입.
+#include <iostream>
+#include <string>
+
+using namespace std;
+
+string s, ret;
+int cnt[200], flag;
+char mid;
+
+int main() {
+	cin >> s;
+	for (char a : s)cnt[a]++;
+	for (int i = 'Z'; i >= 'A'; i--) {
+		if (cnt[i]) {
+			if (cnt[i] % 2 == 1) {
+				mid = char(i); flag++;
+				cnt[i]--;
+			}
+
+			if (flag == 2)break;
+			for (int j = 0; j < cnt[i]; j += 2) {
+				ret = char(i) + ret;
+				ret += char(i);
+			}
+		}
+	}
+	if (mid) ret.insert(ret.begin() + ret.size() / 2, mid);
+	if (flag == 2) cout << "I'm Sorry Hansoo\n";
+	else cout << ret << "\n";
+
+	return 0;
+}
+
