@@ -14,10 +14,7 @@ string s, p;
 int main() {
 	cin >> N >> p;
 
-	for (int i = 0; i < p.size(); i++) {
-		a = p.find('*');
-	}
-
+	a = p.find('*');
 	for (int i = 0; i < N; i++) {
 		cin >> s;
 		if (s.size() < p.size()) res[i] = "NE";
@@ -32,3 +29,31 @@ int main() {
 	return 0;
 }
 -----> 예외적인 케이스까지 처리하였다고 생각하는데 계속 틀리는 이유를 모르겠다..조금 더 고민이 필요할 것 같다.
+-----> 위 코드가 오류가 나오는 이유는 ab*c 와 abdc라는 코드가 있을때 *기준점으로 잡아버리게 되면 s.substr(s.size() - a)) 코드에서 오류가 발생한다.
+-----> 아래 코드와 같이 *을 기준점으로하여 각각의 변수의 범위를 *의 앞, *의 뒤로 설정해주어야 오류가 발생하지 않는다.
+// 정답 코드
+#include <iostream>
+#include <string>
+
+using namespace std;
+
+int N, a;
+string s, p, fro, beh;
+
+
+int main() {
+	cin >> N >> p;
+	a = p.find('*');
+	fro = p.substr(0, a);
+	beh = p.substr(a + 1);
+	for (int i = 0; i < N; i++) {
+		cin >> s;
+		if (s.size() < fro.size() + beh.size()) cout << "NE\n";
+		else {
+			if (fro == s.substr(0, fro.size()) && beh == s.substr(s.size() - beh.size())) cout << "DA\n";
+			else cout << "NE\n";
+		}
+	}
+
+	return 0;
+}
