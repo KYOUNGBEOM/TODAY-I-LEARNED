@@ -30,4 +30,33 @@ int main(){
 
 	return 0;
 }
-// 강의 코드
+// 강의 코드 -> 시간 초과를 해결하기 위해서는 모듈러연산이 답이였다..
+#include <iostream>
+#include <algorithm>
+#include <string>
+
+using namespace std;
+
+int n;
+
+int main(){
+	ios_base::sync_with_stdio(false);
+	cin.tie(NULL); cout.tie(NULL);
+	while(cin >> n) {
+		long long cnt = 1, ret = 1;
+		while (true) {
+			if (cnt % n == 0) {
+				cout << ret << "\n";
+				break;
+			}
+			else {
+				cnt = (cnt * 10) + 1;
+				cnt %= n;
+				ret++;
+			}
+		}
+	}
+
+
+	return 0;
+}
