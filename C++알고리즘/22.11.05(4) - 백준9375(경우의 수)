@@ -1,0 +1,31 @@
+// n : 0 <= n <= 30
+// c(case) : 0 < c <= 100
+
+#include <iostream>
+#include <map>
+using namespace std;
+
+int n, c;
+string a, b;
+
+int main() {
+	cin >> c;
+	for (int i = 0; i < c; i++) {
+		cin >> n;
+		map<string, int> t;
+		for (int j = 0; j < n; j++) {
+			cin >> a >> b;
+			t[b]++;
+		}
+		long long res = 1;
+		for (auto a : t) {
+			res *= (a.second + 1);
+		}
+		res--;
+		cout << res << "\n";
+	}
+
+	return 0;
+}
+
+경우의 수 문제는 값이 커질 수 있기 때문에 long long 형으로 선언하는 것이 좋음.
