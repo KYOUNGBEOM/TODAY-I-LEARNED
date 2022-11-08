@@ -200,3 +200,61 @@ UTF
      log("A07" > "A21"); // false >> 왼쪽에서 오른쪽으로 문자 하나씩 비교, A와 A가 같으므로 다음을 비교, 결정이 되면 다음것은 비교하지 않음.
 - instanceof 연산자
 - in 연산자
+
+동등 == 연산자
+- 왼쪽과 오른쪽 값이 같으면 true, 다르면 false
+- 값 타입은 비교하지 않음. / 1과 "1"이 같음.
+  var value;
+  log(value == null) // true >> undefined 와 null의 값은 0이다. 타입이 다르지만 ture가 반환된다.
+  
+부등 != 연산자
+- 왼쪽과 오른쪽 값이 다르면 ture, 같으면 false
+- a != b와 !(a == b)가 같다.
+
+일치 === 연산자
+- 왼쪽과 오른쪽의 값과 타입이 모두 같으면 true, 다르면 false
+- 1 === 1 // true, 1 === "1" // false, Nuber와 String은 타입이 다르기 때문  
+  var value;
+  log(value === null); // false, 값과 타입 모두 비교
+  log(value == null); // true, 값만 비교
+
+불일치 !== 연산자
+- 값 또는 타입이 다르면 true, 같으면 false
+
+콤마 연산자
+- 콤마로 표현식을 분리
+  var a = 1, b = 2;
+  
+그룹핑 연산자
+- 소괄호( ) 안의 표현식을 먼저 평가
+
+논리 || 연산자
+- 논리 OR 연산자
+- 표현식의 평가 결과가 하나라도 true이면 true, false이면 false
+  var vaule, zero = 0, two = 2;
+  log(value || zero || two); // 2 >> value 변수값 undefined이므로 false, zero 변수값 0이므로 false, two 변수값 2이므로 true >> true가 아니라 true가 되는 변수값 반환
+  log(zero || value); // undefined >> 마지막까지 비교하였는데 false 이면 false가 아니라 마지막 변수값 반환 
+- 왼쪽 결과가 true이면 오른쪽은 비교하지 않는다.
+  var one = 1;
+  log(one === 1 || two === 2); // true >> 왼쪽 비교 결과가 true이면 오른쪽은 비교하지 않음. 오른쪽을 비교하면 two 변수가 없으므로 에러 발생
+
+논리 && 연산자
+- 논리 AND 연산자
+- 표현식의 평가 결과가 모두 true이면 true, 하나라도 false 이면 false
+  var one = 1, two = 2;
+  log(one && two); // 2 >> one 변수값 1이므로 true, two 변수값 2이므로 true, 모두가 true이므로 마지막 변수의 변수값 반환
+- 왼쪽 결과가 false이면 오른쪽은 비교하지 않음
+  var one = 1, zero = 0;
+  log(one && zero && two); // 0 >> one 변수값 1이므로 true, zero 변수값 0이므로 false, 오른쪽을 비교하면 two 변수가 없으므로 에러 발생
+
+조건 연산자
+- 기호: exp ? exp-1: exp-2
+- 3항 연산자라고도 함.
+- exp 위치의 표현식을 먼저 평가 >> true이면 exp-1의 결과 반환, false 이면 exp-2의 결과 반환
+  log(1 === 1 ? "같음" : "다름"); // 같음
+  log(1 === "1" ? "같음" : "다름:); // 다름
+
+연산자 우선순위
+- 연산자 실행 우선순위(ECMA-262 스펙에 없음)
+- 우선순위가 가장 높은 것은 ( )
+- 연산자 우선순위 : https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Operator_Precedence
