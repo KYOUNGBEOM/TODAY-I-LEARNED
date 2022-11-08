@@ -13,7 +13,7 @@
 - 변수의 이름은 자세 할수록 좋음
 
 변수에 값 할당 방법
-- var point = 123, point 456; 
+- var point = 123, point = 456; // point는 456의 값을 가짐. 
 - var ponint = amount = 123;
 
 주석
