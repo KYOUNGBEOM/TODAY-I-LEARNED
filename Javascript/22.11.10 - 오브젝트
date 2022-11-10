@@ -1,0 +1,37 @@
+프로퍼티
+- 형태: {name : value}
+- name에 프로퍼티 이름/키를 작성
+- value에 JS에서 지원하는 타입 작성
+- ES5에서는 key와 name을 구분하지 않아도 되지만 ES6에서는 구분해야함
+
+프로퍼티 추가, 변경
+- var obj = { } >> obj.abc = 123; >> 오브젝트에 프로퍼티 이름으로 추가되고 abc가 없으면 abc:123이 추가, 있으면 프로퍼티 값이 변경
+  1. 점과 프로퍼티 이름 사용
+     var book = { };
+     book.title = "책";
+     log(book); // {책}
+  2. 대괄호 사용
+     var book = { };
+     book["title"] = "책";
+     log(book); // {책}
+  3. 변수이름 사용
+     var book = {tilte: "책"};
+     var varName = "title";
+     book[varname] = "JS책";
+     log(book); // {title: JS책}
+     
+프로퍼티 열거
+- 오브젝트에서 프로퍼티 값 추출
+- var obj = {book: "책"}; >> var value = obj.book; >> obj 오브젝트에 프로퍼티 이름인 book이 있으면 프로퍼티 값을, 없으면 unedfined
+
+for ~ in
+- 오브젝트에서 프로퍼티를 열거, 처음부터 끝까지
+- 형태: for(변수 in 오브젝트) 문장; / for(표현식 in 오브젝트) 문장;
+  var sports = {
+   soccer = "축구"
+   baseball = "야구"
+  };
+  for(var item in sports){
+   log(item); // item = "soccer" / "baseball"
+   log(sports[item]);
+  } // soccer 축구 baseball 야구
