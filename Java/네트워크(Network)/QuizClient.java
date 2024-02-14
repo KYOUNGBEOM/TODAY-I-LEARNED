@@ -16,7 +16,7 @@ public class QuizClient {
 		String fromServer, fromClient;                                            
 		while(true){
 			fromServer = in.readLine();
-			System.out.println("서버 :" + fromServer);
+			System.out.println("서버 : " + fromServer);
 			if(fromServer.contains("총 맞추신 개수는")) {
 				break;
 			}
