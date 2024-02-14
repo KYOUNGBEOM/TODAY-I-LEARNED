@@ -8,9 +8,9 @@ public class QuizBank {
 	int count = 0;
 	
 	String[] problems = {"네트워크 처리 패키지의 이름은?",
-						"서버 소켓의 클래스 이름은??",
-						"인터넷에서 컴퓨터를 식별하는 주소는?"
-						};
+			     "서버 소켓의 클래스 이름은??",
+			     "인터넷에서 컴퓨터를 식별하는 주소는?"
+			    };
 	
 	String[] answers = {"java.net","ServerSocket","IP주소"};
 	
