@@ -12,9 +12,7 @@ public class QuizClient {
 		PrintWriter out = new PrintWriter(clientSocket.getOutputStream(), true);    
 		BufferedReader in = new BufferedReader(new InputStreamReader(clientSocket.getInputStream())); 
 		BufferedReader kb = new BufferedReader(new InputStreamReader(System.in));   
-		
-		
-
+	
 		String fromServer, fromClient;                                            
 		while(true){
 			fromServer = in.readLine();
