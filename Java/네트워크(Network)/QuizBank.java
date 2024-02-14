@@ -26,7 +26,7 @@ public class QuizBank {
 				state = ANSWER;
 			}else if(input.equals("n")){
 				state = WAITING;
-				output = "총 맞추신 개수는" + count + "입니다.";
+				output = "총 맞추신 개수는 " + count + "입니다.";
 				
 			}else {
 				output = "값을 잘못입력하셨습니다.(y/n만으로 입력해주세요)";
