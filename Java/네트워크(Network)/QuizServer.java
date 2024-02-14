@@ -9,14 +9,11 @@ public class QuizServer {
 	public static void main(String[] args) throws IOException {
 		ServerSocket serverSocket = new ServerSocket(6666);	
 
-		
 		System.out.println("Waiting...");
 		Socket clientSocket = serverSocket.accept();
 		System.out.println("connect!!!");
 		
 		PrintWriter out = new PrintWriter(clientSocket.getOutputStream(), true); 
-
-
 		BufferedReader in = new BufferedReader(new InputStreamReader(clientSocket.getInputStream())); 
 
 		String outputLine, inputLine;
