@@ -408,6 +408,17 @@ public class SudokuMain extends JFrame {
 
 	public void resetSudoku(LinkedList<SudokuBean> baseDataList) {
 		sudokuData = baseDataList.get(r).getSudoku_puzzle();
+		
+		for(int i = 0; i < 9; i++) {
+			for(int j = 0; j < 9; j++) {
+				tf[i][j].removeAll();
+				tf[i][j].setText("");
+				tf[i][j].setEnabled(true);
+				tf[i][j].setBorder(border);
+				if(panel_memo[i][j] != null)
+					panel_memo[i][j].removeAll();
+			}
+		}
 
 		for(int i = 0; i < 9; i++) 
 			for(int j = 0; j < 9; j++) {
