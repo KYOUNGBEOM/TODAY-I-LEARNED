@@ -12,7 +12,6 @@ import java.sql.SQLException;
 import java.sql.Statement;
 import java.util.ArrayList;
 
-import javax.lang.model.element.ModuleElement.UsesDirective;
 import javax.swing.BorderFactory;
 import javax.swing.JButton;
 import javax.swing.JFrame;
@@ -25,7 +24,6 @@ import javax.swing.JTextField;
 import javax.swing.border.Border;
 
 public class Login extends JFrame {
-	private String driver = "oracle.jdbc.driver.OracleDriver";
 	private String url = "jdbc:oracle:thin:@localhost:1521:orcl";
 	private String sysId = "sys as sysdba";
 	private String sysPw = "1234";
@@ -47,8 +45,8 @@ public class Login extends JFrame {
 	private ResultSet userResult;
 	private Statement statement;
 
-	private SudokuMain sm;
 	private ArrayList users = new ArrayList();
+	private SudokuMain sm;
 
 
 	Login(String title) {
@@ -136,16 +134,6 @@ public class Login extends JFrame {
 		changePw.addMouseListener(new MouseHandler());
 	}
 
-	public void connect(String id, String pw) {
-		try {
-			conn = DriverManager.getConnection(url, id, pw);
-			System.out.println("접속 성공");
-		} catch (SQLException e) {
-			System.out.println("접속 실패");
-			e.printStackTrace();
-		}
-	}
-
 	public void loginAdmin() {	
 		try {
 			conn = DriverManager.getConnection(url, sysId, sysPw);
@@ -171,8 +159,10 @@ public class Login extends JFrame {
 			try {
 				if(userResult != null)
 					userResult.close();
-				if(conn != null) 
+				if(conn != null) { 
 					conn.close();
+					System.out.println("접속 종료");
+				}
 			} catch (SQLException e) {
 				e.printStackTrace();
 			} 
@@ -221,8 +211,10 @@ public class Login extends JFrame {
 					checkUserStatement.close();	
 				if(statement != null) 
 					statement.close();
-				if(conn != null) 
+				if(conn != null)  { 
 					conn.close();
+					System.out.println("접속 종료");
+				}
 			} catch (SQLException e) {
 				e.printStackTrace();
 			}
@@ -269,7 +261,9 @@ public class Login extends JFrame {
 				String id = idText.getText();
 				char[] tmpPw = pwText.getPassword();
 				String pw = new String(tmpPw);
-
+				boolean isConn = true;
+				
+				users.clear();
 				getUserData();
 
 				if(id.equals("") && pw.equals("")) 
@@ -284,10 +278,14 @@ public class Login extends JFrame {
 						if(users.get(i).equals(id.toUpperCase())) {
 							sm = new SudokuMain("스도쿠 마스터", id, pw);
 							isId = false;
+							isConn = sm.isConn();
 						} 
 					}
-					if(isId)
+					if(isId) {
 						JOptionPane.showMessageDialog(contentPane, "존재하지 않는 아이디입니다.", "아이디 오류", JOptionPane.ERROR_MESSAGE);
+						isConn = false;
+					}
+					if(isConn) dispose();
 				}
 			}
 		}

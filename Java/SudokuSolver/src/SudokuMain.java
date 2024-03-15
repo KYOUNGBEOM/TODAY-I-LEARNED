@@ -62,7 +62,8 @@ public class SudokuMain extends JFrame {
 	private int clickCol; // 마지막으로 클릭한 텍스트필드의 위치 저장
 	private String id;
 	private String pw;
-	private static String difficulty;
+	private String difficulty;
+	private boolean isConn;
 
 	private Font f = new Font("Dialog", Font.BOLD, 24); // 글자체, 글자크기 설정
 	Border border = BorderFactory.createLineBorder(Color.black, 1); // 스도쿠 구분 테두리 설정
@@ -80,6 +81,7 @@ public class SudokuMain extends JFrame {
 
 			difficulty = "easy";
 			sudokuList = sd.selectByDifficulty(difficulty, id, pw); // 스도쿠 처음 실행시 default 값
+			isConn = true;
 			baseDataList = sd.setBaseData(difficulty);
 
 			for(int i = 0; i < 9; i++) {
@@ -100,6 +102,7 @@ public class SudokuMain extends JFrame {
 
 			difficulty = "easy";
 			sudokuList = sd.selectByDifficulty(difficulty, id, pw); // 스도쿠 처음 실행시 default 값
+			isConn = true;
 			baseDataList = sd.setBaseData(difficulty);
 
 			for(int i = 0; i < 9; i++) {
@@ -110,12 +113,12 @@ public class SudokuMain extends JFrame {
 
 			fillData(sudokuList);	// 데이터를 할당
 
-
 			compose(); // 화면을 구성
 
 			setSize(720,670);
 			setVisible(true);
 		} catch(SQLException e) {
+			isConn = false;
 			JOptionPane.showMessageDialog(contentPane, "틀린 비밀번호 입니다.", "pw 오류", JOptionPane.ERROR_MESSAGE);
 		}
 	}
@@ -473,6 +476,10 @@ public class SudokuMain extends JFrame {
 			JOptionPane.showMessageDialog(contentPane, "오답입니다!", "오답", JOptionPane.ERROR_MESSAGE);
 		else 
 			JOptionPane.showMessageDialog(contentPane, "정답입니다!", "정답", JOptionPane.INFORMATION_MESSAGE);
+	}
+	
+	public boolean isConn() {
+		return isConn;
 	}
 
 	// 키이벤트를 처리하는 내부클래스

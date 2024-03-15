@@ -122,6 +122,7 @@ public class SudokuDao {
 
 			insertDefaultData();
 		} catch (SQLSyntaxErrorException e) {
+			e.printStackTrace();
 			throw e;
 		} catch (SQLException e) {
 			e.printStackTrace();
@@ -133,8 +134,10 @@ public class SudokuDao {
 					rs.close();
 				if(ps != null)
 					ps.close();
-				if(conn != null) 
+				if(conn != null) {
 					conn.close();
+					System.out.println("접속 종료");
+				}
 			} catch (SQLException e) {
 				e.printStackTrace();
 			}
