@@ -218,7 +218,7 @@ public class SudokuMain extends JFrame {
 		caution.setBounds(10,30, 300, 67);
 		caution.setFont(f);
 		contentPane.add(caution);
-
+		
 		// 테이블 설정	
 		table = new JTable();
 		table.setBounds(225, 150, 453, 453);
@@ -333,7 +333,7 @@ public class SudokuMain extends JFrame {
 
 		// 힌트, 정답확인등을 담을 패널 설정
 		JPanel setting = new JPanel();
-		setting.setLayout(new GridLayout(6, 1, 2, 2));
+		setting.setLayout(new GridLayout(6, 1));
 		setting.setBounds(10, 260, 200, 340);
 		setting.setBorder(border);
 
@@ -409,7 +409,11 @@ public class SudokuMain extends JFrame {
 	}
 
 	public void resetSudoku(LinkedList<SudokuBean> baseDataList) {
-		sudokuData = baseDataList.get(r).getSudoku_puzzle();
+		for(int i = 0; i < 9; i++) {
+			for(int j = 0; j < 9; j++) {
+				sudokuData[i][j] = baseDataList.get(r).getSudoku_puzzle()[i][j];
+			}
+		}
 		
 		for(int i = 0; i < 9; i++) {
 			for(int j = 0; j < 9; j++) {
@@ -437,14 +441,6 @@ public class SudokuMain extends JFrame {
 						tf[i][j].setText(sudokuData[i][j].toString());
 						tf[i][j].setEnabled(false);
 						tf[i][j].setBorder(border);					
-					} else {
-						tf[i][j].setText(sudokuData[i][j].toString());
-						tf[i][j].setBorder(border);
-						tf[i][j].setLayout(new BorderLayout());
-						panel_memo[i][j] = new JPanel();
-
-						addMemoFunction(i, j);
-						tf[i][j].add(panel_memo[i][j]);
 					}
 				}
 			}	
@@ -610,4 +606,3 @@ public class SudokuMain extends JFrame {
 		}
 	}
 } // SudokuMain 끝
-
