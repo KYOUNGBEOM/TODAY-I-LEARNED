@@ -414,6 +414,8 @@ public class SudokuMain extends JFrame {
 				sudokuData[i][j] = baseDataList.get(r).getSudoku_puzzle()[i][j];
 			}
 		}
+
+		border = BorderFactory.createLineBorder(Color.black, 1);
 		
 		for(int i = 0; i < 9; i++) {
 			for(int j = 0; j < 9; j++) {
